@@ -1,0 +1,90 @@
+.navbar
+	position: fixed
+	left: 0
+	right: 0
+	top: 0
+	width: 100%
+	background-color: #fff
+
+	&-wrap
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		justify-content: space-between
+		min-height: 80px	
+	&__mobile, &__landline
+		text-align: right
+	&__phone
+		font-size: 19px
+		+bold
+		display: block
+		text-decoration: none
+		color: $text-color
+		margin-bottom: 5px
+	&__small-text
+		font-size: 14px
+		color: $text-color-light
+		text-decoration: none
+		display: block
+
+.menu
+	position: fixed
+	top: 80px
+	padding: 16px 0
+	width: 100%
+	left: 0
+	background-color: $primary
+	z-index: 0
+	transform: translateY(-100%)
+	transition: transform .2s ease
+	&_active
+		transform: translateY(0%)
+	&__nav
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		justify-content: space-around
+	&__link
+		text-decoration: none
+		font-size: 17px
+		text-transform: uppercase
+		color: #fff
+	&-button
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		background-color: transparent
+		border: none
+		border-right: 1px solid rgba(#510baa, .1)
+		border-left: 1px solid rgba(#510baa, .1)
+		height: 80px
+		width: 70px
+		&__line
+			display: block
+			width: 20px
+			height: 3px
+			background-color: #89a9eb
+			margin: 2px 0
+
+.logo
+	&__text
+		font-size: 18px
+		text-transform: uppercase
+		display: block
+		margin-bottom: 5px
+		+bold
+	&__description
+		font-size: 14px
+		display: block
+		color: $text-color-light
