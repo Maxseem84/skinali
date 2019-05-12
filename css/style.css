@@ -974,3 +974,56 @@ img {
   font-size: 20px;
   margin-left: 70px;
 }
+
+.contacts {
+  background-color: #f6f7f9;
+}
+
+.contacts-block {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.contacts-block__item {
+  text-align: center;
+}
+
+.contacts__image {
+  margin-bottom: 25px;
+}
+
+.contacts__text {
+  font-size: 16px;
+}
+
+.contacts__link {
+  color: #262626;
+  text-decoration: none;
+}
+
+.contacts__address {
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .contacts-block__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .contacts__address {
+    max-width: 200px;
+    margin: auto;
+  }
+}
